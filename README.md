@@ -1228,15 +1228,15 @@ cast call 0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608 "getDiscordNamesBatch(uint2
 
 Looking for ultra-budget VPS options Here are two solid picks used by many in the blockchain and dev community:
 
-🔥 **RackNerd** – Reliable low-cost KVM VPS with locations worldwide  
-➡️ [Explore RackNerd Offers](https://my.racknerd.com/aff.php?aff=14994) <!-- hidden referral -->
+**💰 Budget VPS (Crypto Accepted)**
+1. **SpaceCore** - Contabo alternative, accepts BTC/USDT  
+   [CLICK HERE](https://billing.spacecore.pro/billmgr?from=63882)
 
-💰 **HostVDS** – Russian-based affordable VPS with custom configuration  
-➡️ [Check HostVDS Plans](https://hostvds.com/?affiliate_uuid=f3d517f2-6e58-4549-9ecd-d280fa8cea3c) <!-- hidden referral -->
+2. **RackNerd** - From $10.96/year, 30+ crypto options  
+   [CLICK HERE](https://my.racknerd.com/aff.php?aff=14994)
 
-> 🧠 Tip: Always choose a VPS with at least `1 CPU`, `1 GB RAM`, and `10-20 GB SSD` for basic testnet node operation.
-
----
+3. **HostVDS** - Russian servers, BTC/LTC payments  
+   [CLICK HERE](https://hostvds.com/?affiliate_uuid=f3d517f2-6e58-4549-9ecd-d280fa8cea3c)
 
 ✅ Great for:
 - Running lightweight validator or RPC nodes
