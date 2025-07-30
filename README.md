@@ -240,6 +240,7 @@ Choose one Installation Method:
 ### Create Drosera Network Folder
 
 ```bash
+cd #ensure you in root directory
 mkdir ~/Drosera-Network
 cd ~/Drosera-Network
 ```
