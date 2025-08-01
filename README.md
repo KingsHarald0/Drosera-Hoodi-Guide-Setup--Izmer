@@ -2,9 +2,9 @@
 
 This repository documents the setup and deployment of a **Drosera Trap** and a **Drosera Operator** node running on the Hoodi Ethereum testnet.
 
-## 📱 Mobile Drosera Node Setup
-> **Mobile Users:** For optimized Termius (Android/iOS) setup instructions, see:  
-> **[Drosera Mobile Setup Guide](https://github.com/izmerGhub/Drosera-Node-Hoodi-MOBILE-SETUP--Izmer/blob/main/README.md)**
+## Mobile Drosera Node Setup
+> **Mobile Users:** For optimized Termius (Android/iOS) setup instructions, click here:
+👉 **[Drosera Mobile Setup Guide](https://github.com/izmerGhub/Drosera-Node-Hoodi-MOBILE-SETUP--Izmer/blob/main/README.md)**
 
 ## Mac User? if not scroll further.
 For macOS-specific setup instructions, click here:  
