@@ -12,14 +12,14 @@ For macOS-specific setup instructions, click here:
 
 ## BAD AT CODING? No problem! (NO VPS + NO PC)
 
-**Drosera Node (Nodes.Garden)**  
+**Buy Drosera Node (Nodes.Garden)**  
 Use code: `7B05A6`  
 [👉 Get 10% OFF](https://nodes.garden/dashboard/projects/94)  
 
-**Drosera Node(Rapidnode)**  
+**Buy Drosera Node (Rapidnode)**
 Use code: `AQ8SY6`  
 [👉 Get 5% OFF](https://app.rapidnode.xyz/purchase/drosera)
----
+
 
 ## Table of Contents
 
