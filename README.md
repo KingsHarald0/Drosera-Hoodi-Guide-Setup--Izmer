@@ -12,14 +12,13 @@ For macOS-specific setup instructions, click here:
 
 ## BAD AT CODING? No problem! (NO VPS + NO PC)
 
-You can still run a Drosera node easily by purchasing one with **5% discount** using my referral code:
+**Drosera Node (Nodes.Garden)**  
+Use code: `7B05A6`  
+[👉 Get 10% OFF](https://nodes.garden/dashboard/projects/94)  
 
-**Referral Code: `AQ8SY6`**
-
-[👉 Buy Drosera Node Now (5% Off)](https://app.rapidnode.xyz/purchase/drosera)
-
-Simply click the link above and use the referral code during checkout to get your discount!
-
+**Drosera Node(Rapidnode)**  
+Use code: `AQ8SY6`  
+[👉 Get 5% OFF](https://app.rapidnode.xyz/purchase/drosera)
 ---
 
 ## Table of Contents
