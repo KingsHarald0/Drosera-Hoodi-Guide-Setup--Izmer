@@ -1063,6 +1063,9 @@ Discord: [https://discord.com/invite/drosera](https://discord.com/invite/drosera
 
 Assuming your Trap is deployed and your operator is running, let's set up a new Trap to submit your Discord username on-chain and unlock an exclusive Cadet role.
 
+#### Get Your Node Garden Cadet Role
+[**→ Click Here for Drosera Node Garden Cadet Setup Guide ←**](https://github.com/izmerGhub/Drosera-Network-Hoodi--Nodes-Garden-Cadet-Role)
+
 ---
 
 ### 1. Create New Trap
