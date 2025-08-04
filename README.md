@@ -1023,40 +1023,6 @@ drosera-operator optin \
 Go to [https://app.drosera.io/](https://app.drosera.io/)\
 ![configure through dashboard](Asset/configure%20through%20dashboard.png)
 
-## Useful Commands & Updates
-
-```bash
-# View operator logs
-docker logs -f drosera-operator
-
-# Stop operator
-docker compose down
-
-# Restart operator
-docker compose restart
-
-# Reapply trap config after changes
-DROSERA_PRIVATE_KEY=your_eth_private_key_here drosera apply
-
-# Update droseraup utility (run regularly)
-curl -L https://app.drosera.io/install | bash
-# or simply
-droseraup
-```
-
----
-
-## Folder Structure Notes
-
-Drosera Trap folder: `~/my-drosera-trap`\
-Drosera Operator folder: `~/Drosera-Network`
-
----
-
-## Contact and Support
-
-Official docs: [https://dev.drosera.io/](https://dev.drosera.io/)\
-Discord: [https://discord.com/invite/drosera](https://discord.com/invite/drosera)
 
 <a name="get-cadet-role-discord"></a>
 ## 🔹GET CADET ROLE DISCORD (HOODI VERSION YEHOOOO) 🟥![cadet role](Asset/cadet%20role.png)
@@ -1226,6 +1192,42 @@ cast call 0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608 "getDiscordNamesBatch(uint2
 ```
 ---
 ![discord username](Asset/discord%20username%20izmers.png)
+
+## 🔹Useful Commands & Updates
+
+```bash
+# View operator logs
+docker logs -f drosera-operator
+
+# Stop operator
+docker compose down
+
+# Restart operator
+docker compose restart
+
+# Reapply trap config after changes
+DROSERA_PRIVATE_KEY=your_eth_private_key_here drosera apply
+
+# Update droseraup utility (run regularly)
+curl -L https://app.drosera.io/install | bash
+# or simply
+droseraup
+```
+
+---
+
+## Folder Structure Notes
+
+Drosera Trap folder: `~/my-drosera-trap`\
+Drosera Operator folder: `~/Drosera-Network`
+
+---
+
+## Contact and Support
+
+Official docs: [https://dev.drosera.io/](https://dev.drosera.io/)\
+Discord: [https://discord.com/invite/drosera](https://discord.com/invite/drosera)
+
 
 ## 🔹💸 Cheapest VPS Hosting Deals under 3$ per month (Perfect for Testnets & Lightweight Nodes)
 
