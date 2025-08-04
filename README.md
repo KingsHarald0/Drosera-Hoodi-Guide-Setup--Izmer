@@ -53,7 +53,7 @@ Use code: `AQ8SY6`
 
 # 🔥 [Need VPS under 3 USD? Click here](#-cheapest-vps-hosting-deals-under-3-per-month-perfect-for-testnets--lightweight-nodes)
 
-## Hoodi Testnet ETH (Hoodi Token)
+## 🔹Hoodi Testnet ETH (Hoodi Token)
 
 To mine or interact with contracts on the Hoodi Testnet, you'll need test ETH:
 
@@ -76,7 +76,7 @@ For more on the Hoodi testnet RPC, endpoints, and setup guides, refer to:
 👉 [https://github.com/eth-clients/hoodi](https://github.com/eth-clients/hoodi)
 
 
-🔹## Install Dependencies
+## 🔹Install Dependencies
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
@@ -118,7 +118,7 @@ sudo docker run hello-world
 
 ---
 
-🔹# 1. Drosera Trap Setup
+# 🔹1. Drosera Trap Setup
 
 ### Install Required Tools
 
@@ -231,7 +231,7 @@ drosera bloomboost --trap-address <trap_address> --eth-amount <amount>
 
 ---
 
-🔹# 2. Drosera Operator Setup
+# 🔹2. Drosera Operator Setup
 ## A. Choose Docker or SystemD
 
 Choose one Installation Method:
@@ -471,7 +471,7 @@ HELLO WORLD TRAP (light green)
 ---
 
 ---
-🔹# 🟥🟥 I DONE EVERYTHING MY NODE STILL RED :( 🟥🟥
+# 🔹🟥🟥 I DONE EVERYTHING MY NODE STILL RED :( 🟥🟥
 
 ##  How to Fix common IP/firewall Issues Red Node
 
@@ -775,7 +775,7 @@ docker compose logs -f
 ✅ **Tip:** Always restart UFW or reload iptables rules after editing  
 ✅ **Tip:** You can also monitor traffic with `tcpdump` or `nload` for debugging
 
-🔹## ❗❗❗ Problem: Register Operator Transaction Fails❗❗❗
+## 🔹❗❗❗ Problem: Register Operator Transaction Fails❗❗❗
 
 When attempting to register the operator, the following error appears:
 
@@ -906,7 +906,7 @@ docker run -it --rm ghcr.io/drosera-network/drosera-operator:latest register \
 🛡️ This is a clean and containerized way to run the `register` command without polluting your host machine with dependencies.
 
 
-🔹# 🧑‍💻🧑‍💻Drosera Network Multi-Operator Setup (Hoodi Network)🧑‍💻🧑‍💻
+# 🔹🧑‍💻🧑‍💻Drosera Network Multi-Operator Setup (Hoodi Network)🧑‍💻🧑‍💻
 
 ## 1. Configure Trap
 ```bash
@@ -1019,7 +1019,7 @@ drosera-operator optin \
 ![Dual Operator](Asset/2%20operator.png)
 
 
-🔹# Configure through dashboard instead
+# 🔹Configure through dashboard instead
 Go to [https://app.drosera.io/](https://app.drosera.io/)\
 ![configure through dashboard](Asset/configure%20through%20dashboard.png)
 
@@ -1059,7 +1059,7 @@ Official docs: [https://dev.drosera.io/](https://dev.drosera.io/)\
 Discord: [https://discord.com/invite/drosera](https://discord.com/invite/drosera)
 
 <a name="get-cadet-role-discord"></a>
-🔹## GET CADET ROLE DISCORD (HOODI VERSION YEHOOOO) 🟥![cadet role](Asset/cadet%20role.png)
+## 🔹GET CADET ROLE DISCORD (HOODI VERSION YEHOOOO) 🟥![cadet role](Asset/cadet%20role.png)
 
 Assuming your Trap is deployed and your operator is running, let's set up a new Trap to submit your Discord username on-chain and unlock an exclusive Cadet role.
 
@@ -1227,7 +1227,7 @@ cast call 0x25E2CeF36020A736CF8a4D2cAdD2EBE3940F4608 "getDiscordNamesBatch(uint2
 ---
 ![discord username](Asset/discord%20username%20izmers.png)
 
-## 💸 Cheapest VPS Hosting Deals under 3$ per month (Perfect for Testnets & Lightweight Nodes)
+## 🔹💸 Cheapest VPS Hosting Deals under 3$ per month (Perfect for Testnets & Lightweight Nodes)
 
 Looking for ultra-budget VPS options Here are two solid picks used by many in the blockchain and dev community:
 
