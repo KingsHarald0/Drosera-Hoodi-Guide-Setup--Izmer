@@ -76,7 +76,7 @@ For more on the Hoodi testnet RPC, endpoints, and setup guides, refer to:
 👉 [https://github.com/eth-clients/hoodi](https://github.com/eth-clients/hoodi)
 
 
-## Install Dependencies
+🔹## Install Dependencies
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
@@ -118,7 +118,7 @@ sudo docker run hello-world
 
 ---
 
-# 1. Drosera Trap Setup
+🔹# 1. Drosera Trap Setup
 
 ### Install Required Tools
 
@@ -231,7 +231,7 @@ drosera bloomboost --trap-address <trap_address> --eth-amount <amount>
 
 ---
 
-# 2. Drosera Operator Setup
+🔹# 2. Drosera Operator Setup
 ## A. Choose Docker or SystemD
 
 Choose one Installation Method:
@@ -471,7 +471,7 @@ HELLO WORLD TRAP (light green)
 ---
 
 ---
-# 🟥🟥 I DONE EVERYTHING MY NODE STILL RED :( 🟥🟥
+🔹# 🟥🟥 I DONE EVERYTHING MY NODE STILL RED :( 🟥🟥
 
 ##  How to Fix common IP/firewall Issues Red Node
 
@@ -775,7 +775,7 @@ docker compose logs -f
 ✅ **Tip:** Always restart UFW or reload iptables rules after editing  
 ✅ **Tip:** You can also monitor traffic with `tcpdump` or `nload` for debugging
 
-## ❗❗❗ Problem: Register Operator Transaction Fails❗❗❗
+🔹## ❗❗❗ Problem: Register Operator Transaction Fails❗❗❗
 
 When attempting to register the operator, the following error appears:
 
@@ -906,7 +906,7 @@ docker run -it --rm ghcr.io/drosera-network/drosera-operator:latest register \
 🛡️ This is a clean and containerized way to run the `register` command without polluting your host machine with dependencies.
 
 
-# 🧑‍💻🧑‍💻Drosera Network Multi-Operator Setup (Hoodi Network)🧑‍💻🧑‍💻
+🔹# 🧑‍💻🧑‍💻Drosera Network Multi-Operator Setup (Hoodi Network)🧑‍💻🧑‍💻
 
 ## 1. Configure Trap
 ```bash
@@ -1019,7 +1019,7 @@ drosera-operator optin \
 ![Dual Operator](Asset/2%20operator.png)
 
 
-# Configure through dashboard instead
+🔹# Configure through dashboard instead
 Go to [https://app.drosera.io/](https://app.drosera.io/)\
 ![configure through dashboard](Asset/configure%20through%20dashboard.png)
 
@@ -1059,7 +1059,7 @@ Official docs: [https://dev.drosera.io/](https://dev.drosera.io/)\
 Discord: [https://discord.com/invite/drosera](https://discord.com/invite/drosera)
 
 <a name="get-cadet-role-discord"></a>
-## GET CADET ROLE DISCORD (HOODI VERSION YEHOOOO) 🟥![cadet role](Asset/cadet%20role.png)
+🔹## GET CADET ROLE DISCORD (HOODI VERSION YEHOOOO) 🟥![cadet role](Asset/cadet%20role.png)
 
 Assuming your Trap is deployed and your operator is running, let's set up a new Trap to submit your Discord username on-chain and unlock an exclusive Cadet role.
 
