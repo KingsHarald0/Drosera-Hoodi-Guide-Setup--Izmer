@@ -82,7 +82,7 @@ ssh username@your.vps.ip.address
 *(Example: `ssh root@123.123.123.123`)*  
 
 #### **. Enter Password**  
-- Type your **VPS password** (no visible typing) → Press `Enter`.  
+- Type/paste your **VPS password** (no visible typing) → Press `Enter`.  
 
 #### **Success!**  
 You’ll see a terminal prompt like:  
