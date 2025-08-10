@@ -75,7 +75,7 @@ To mine or interact with contracts on the Hoodi Testnet, you'll need test ETH:
 For more on the Hoodi testnet RPC, endpoints, and setup guides, refer to:  
 👉 [https://github.com/eth-clients/hoodi](https://github.com/eth-clients/hoodi)
 
-## **Login VPS(Skip for local)**  
+## **How to login VPS(If ANY)**  
 ```bash
 ssh username@your.vps.ip.address
 ```  
