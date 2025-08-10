@@ -1189,6 +1189,7 @@ If you receive `true` as a response, it means you have successfully completed al
 #Docker user
 cd
 cd ~/Drosera-Network
+docker compose down
 docker compose up -d
 
 #SystemD user
