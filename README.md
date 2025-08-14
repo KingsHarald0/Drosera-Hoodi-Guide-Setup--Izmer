@@ -531,11 +531,16 @@ sudo ufw reload
 
 **1. Configure WireGuard on VPS**  
 ```bash
+#Install Wireguard
 sudo apt update && sudo apt install -y wireguard resolvconf
+
+#Generate the Key
 sudo su
 umask 077
 wg genkey > /etc/wireguard/privatekey
 wg pubkey < /etc/wireguard/privatekey > /etc/wireguard/publickey
+
+#Reveal the Key
 cat /etc/wireguard/privatekey  # <VPS_PRIVATE_KEY>
 cat /etc/wireguard/publickey   # <VPS_PUBLIC_KEY>
 ```
@@ -615,9 +620,14 @@ sudo systemctl start wg-quick@wg0
 
 **2. Generate Keys in WSL**  
 ```bash
+#Install Wireguard
 sudo apt update && sudo apt install -y wireguard-tools
+
+#Generate the Key
 umask 077
 wg genkey | tee privatekey | wg pubkey > publickey
+
+#Reveal the Key
 cat privatekey  # <WSL_PRIVATE_KEY>
 cat publickey   # <WSL_PUBLIC_KEY>
 ```
@@ -1264,5 +1274,6 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
