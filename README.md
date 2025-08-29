@@ -1273,8 +1273,7 @@ cd ~/my-drosera-trap
 
 # Run the update
 droseraup
-
-
+```
 
 ## 🔹💸 Cheapest VPS Hosting Deals under 3$ per month (Perfect for Testnets & Lightweight Nodes)
 
@@ -1296,6 +1295,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
