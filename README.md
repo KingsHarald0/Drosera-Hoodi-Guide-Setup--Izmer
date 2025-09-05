@@ -1265,7 +1265,13 @@ This guide explains how to update your Drosera trapper/operator to the latest re
 If you already have the **droseraup** utility installed, you can update easily:
 
 ```bash
-# Reload your bashrc (optional, to ensure PATH is updated)
+# Check your current PATH:
+echo $PATH
+
+# Add Drosera to your PATH permanently:
+echo 'export PATH="$HOME/.drosera/bin:$PATH"' >> ~/.bashrc
+   
+# Reload your bashrc 
 source ~/.bashrc
 
 # Navigate to your Drosera directory
@@ -1309,6 +1315,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
