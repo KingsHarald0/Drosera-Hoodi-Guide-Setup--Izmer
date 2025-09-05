@@ -1254,13 +1254,13 @@ Drosera Operator folder: `~/Drosera-Network`
 Official docs: [https://dev.drosera.io/](https://dev.drosera.io/)\
 Discord: [https://discord.com/invite/drosera](https://discord.com/invite/drosera)
 
-# 🚀 Updating Drosera to v1.21.0 (LATEST)
+# 🚀 Updating Drosera to v1.21.x (LATEST)
 
-This guide explains how to update your Drosera trapper/operator to the latest release (**v1.21.0**).
+This guide explains how to update your Drosera trapper/operator to the latest release (**v1.21.x**).
 
 ---
 
-## 🔄 Update using `droseraup` (recommended)
+## 🔄 Drosera CLI Update
 
 If you already have the **droseraup** utility installed, you can update easily:
 
@@ -1273,7 +1273,21 @@ cd ~/my-drosera-trap
 
 # Run the update
 droseraup
+
+# VERIFY THE UPDATE VERSION
+drosera --version
+
 ```
+## 🔄 Drosera Operator Update
+
+```bash
+# Pull operator latest image
+docker pull ghcr.io/drosera-network/drosera-operator:v1.21.2
+
+# VERIFY THE UPDATE VERSION
+drosera-operator --version
+```
+
 
 ## 🔹💸 Cheapest VPS Hosting Deals under 3$ per month (Perfect for Testnets & Lightweight Nodes)
 
@@ -1295,6 +1309,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
