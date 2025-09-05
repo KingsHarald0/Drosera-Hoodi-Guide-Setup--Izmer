@@ -1281,7 +1281,7 @@ drosera --version
 ## 🔄 Drosera Operator Update
 
 ```bash
-# Pull operator latest image
+# Pull operator latest image (check latest ver(https://github.com/drosera-network/releases/releases))
 docker pull ghcr.io/drosera-network/drosera-operator:v1.21.2
 
 # VERIFY THE UPDATE VERSION
@@ -1309,6 +1309,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
