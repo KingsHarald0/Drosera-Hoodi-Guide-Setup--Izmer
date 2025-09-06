@@ -1287,12 +1287,16 @@ drosera --version
 ## 🔄 Drosera Operator Update
 
 ```bash
-#Go to Operator path
+# Go to Operator path
 source ~/.bashrc
 cd Drosera-Network
 
 # Pull operator latest image (check latest ver(https://github.com/drosera-network/releases/releases))
 docker pull ghcr.io/drosera-network/drosera-operator:v1.21.2
+
+# Make it use latest version
+echo 'alias drosera-operator="docker run -it --rm -v ~/.drosera:/root/.drosera ghcr.io/drosera-network/drosera-operator:v1.21.2"' >> ~/.bashrc
+source ~/.bashrc
 
 # VERIFY THE UPDATE VERSION
 drosera-operator --version
@@ -1319,6 +1323,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
