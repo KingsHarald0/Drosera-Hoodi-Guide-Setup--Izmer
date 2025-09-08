@@ -647,7 +647,7 @@ MTU = 1280
 [Peer]
 PublicKey = <VPS_PUBLIC_KEY>
 Endpoint = <VPS_PUBLIC_IP>:51820
-AllowedIPs = 0.0.0.0/0
+AllowedIPs = 0.0.0.0/1, 128.0.0.0/1
 PersistentKeepalive = 25
 
 ```
@@ -705,7 +705,7 @@ MTU = 1280
 [Peer]
 PublicKey = <VPS_PUBLIC_KEY>
 Endpoint = <VPS_PUBLIC_IP>:51820
-AllowedIPs = 0.0.0.0/0
+AllowedIPs = 0.0.0.0/1, 128.0.0.0/1
 PersistentKeepalive = 25
 ```
 Add accordingly input before save `<LINUX_PRIVATE_KEY>`, `<VPS_PUBLIC_KEY>`, `<VPS_PUBLIC_IP>`
@@ -1323,6 +1323,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
