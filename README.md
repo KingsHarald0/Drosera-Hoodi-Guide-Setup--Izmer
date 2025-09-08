@@ -36,11 +36,11 @@ Use code: `AQ8SY6`
 - [Firewall Configuration](#firewall-configuration)
 - [Multiple Operators Setup](#drosera-network-multi-operator-setup-hoodi-network)
 - [How to Fix common IP/firewall Issues Red Node](#how-to-fix-common-ipfirewall-issues-red-node)
-- [❗❗❗ Problem: Register Operator Transaction Fails❗❗❗](#-problem-register-operator-transaction-fails-)
+- [❗❗❗ Problem: Register Operator Transaction Fails❗❗❗](#-problem-register-operator-transaction-fails)
 - [GET CADET ROLE DISCORD (HOODI VERSION YEHOOOO) 🟥](#get-cadet-role-discord-hoodi-version-yehoooo-)
 - [Useful Commands & Updates](#useful-commands--updates)
 - [Contact and Support](#contact-and-support)
-- [UPDATE DROSERA LATEST VERSION (recommended)](#-update-using-droseraup-recommended)
+- [🚀 Update Drosera to v1.21.x (Recommended)](#-update-drosera-to-v121x-recommended)
 
 ---
 
@@ -1323,6 +1323,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
