@@ -40,7 +40,7 @@ Use code: `AQ8SY6`
 - [GET CADET ROLE DISCORD (HOODI VERSION YEHOOOO) 🟥](#get-cadet-role-discord-hoodi-version-yehoooo-)
 - [Useful Commands & Updates](#useful-commands--updates)
 - [Contact and Support](#contact-and-support)
-- [🚀 Update Drosera to v1.21.x (Recommended)](#-update-drosera-to-v121x-recommended)
+- [🚀 Updating Drosera to v1.21.x (LATEST)](#-updating-drosera-to-v121x-latest)
 
 ---
 
@@ -1323,6 +1323,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
