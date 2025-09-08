@@ -547,9 +547,67 @@ cat /etc/wireguard/publickey   # <VPS_PUBLIC_KEY>
 ```
 
 **2. Create VPS WireGuard Config**  
+
+## 1️⃣ Create PostUp Script
+
+Create `nano /etc/wireguard/wg-postup.sh`:
+
 ```bash
-nano /etc/wireguard/wg0.conf
+#!/bin/bash
+
+# Enable IP forwarding
+sysctl -w net.ipv4.ip_forward=1
+
+# Allow SSH
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+# NAT VPN traffic to Internet
+iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
+
+# Allow forwarding between VPN and Internet
+iptables -A FORWARD -i wg0 -o eth0 -j ACCEPT
+iptables -A FORWARD -i eth0 -o wg0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+
+# DNAT TCP/UDP ports to Linux client 10.8.0.2
+iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
+iptables -t nat -A PREROUTING -i eth0 -p udp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
+
+# SNAT replies from client
+iptables -t nat -A POSTROUTING -s 10.8.0.2 -j SNAT --to-source <VPS_PUBLIC_IP>
 ```
+
+Make it executable:
+
+```bash
+chmod +x /etc/wireguard/wg-postup.sh
+```
+
+## 2️⃣ Create PostDown Script
+
+Create `nano /etc/wireguard/wg-postdown.sh`:
+
+```bash
+#!/bin/bash
+
+iptables -D INPUT -p tcp --dport 22 -j ACCEPT
+iptables -t nat -D POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
+iptables -D FORWARD -i wg0 -o eth0 -j ACCEPT
+iptables -D FORWARD -i eth0 -o wg0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -t nat -D PREROUTING -i eth0 -p tcp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
+iptables -t nat -D PREROUTING -i eth0 -p udp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
+iptables -t nat -D POSTROUTING -s 10.8.0.2 -j SNAT --to-source <VPS_PUBLIC_IP>
+```
+
+Make it executable:
+
+```bash
+chmod +x /etc/wireguard/wg-postdown.sh
+```
+
+## 3️⃣ Update VPS WireGuard Config
+
+Create `nano /etc/wireguard/wg0.conf`:
+
 ```ini
 [Interface]
 PrivateKey = <VPS_PRIVATE_KEY>
@@ -557,41 +615,12 @@ Address = 10.8.0.1/24
 ListenPort = 51820
 MTU = 1280
 
-# Enable IP forwarding
-PostUp = sysctl -w net.ipv4.ip_forward=1
-
-# Allow SSH always (optional but recommended)
-PostUp = iptables -A INPUT -p tcp --dport 22 -j ACCEPT
-
-# NAT traffic from VPN clients to Internet
-PostUp = iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
-
-# Allow forwarding between VPN and Internet
-PostUp = iptables -A FORWARD -i wg0 -o eth0 -j ACCEPT
-PostUp = iptables -A FORWARD -i eth0 -o wg0 -m state --state RELATED,ESTABLISHED -j ACCEPT
-
-# DNAT TCP ports to 10.8.0.2 (Linux client)
-PostUp = iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
-
-# DNAT UDP ports to 10.8.0.2 (Linux client)
-PostUp = iptables -t nat -A PREROUTING -i eth0 -p udp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
-
-# SNAT replies from 10.8.0.2 to appear from VPS public IP
-PostUp = iptables -t nat -A POSTROUTING -s 10.8.0.2 -j SNAT --to-source <VPS_PUBLIC_IP>
-
-# --- Cleanup rules ---
-PostDown = iptables -D INPUT -p tcp --dport 22 -j ACCEPT
-PostDown = iptables -t nat -D POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
-PostDown = iptables -D FORWARD -i wg0 -o eth0 -j ACCEPT
-PostDown = iptables -D FORWARD -i eth0 -o wg0 -m state --state RELATED,ESTABLISHED -j ACCEPT
-PostDown = iptables -t nat -D PREROUTING -i eth0 -p tcp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
-PostDown = iptables -t nat -D PREROUTING -i eth0 -p udp -m multiport --dports 31313,31314 -j DNAT --to-destination 10.8.0.2
-PostDown = iptables -t nat -D POSTROUTING -s 10.8.0.2 -j SNAT --to-source <VPS_PUBLIC_IP>
+PostUp = /etc/wireguard/wg-postup.sh
+PostDown = /etc/wireguard/wg-postdown.sh
 
 [Peer]
 PublicKey = <WSL_PUBLIC_KEY> or <LINUX_PUBLIC_KEY> # GET AT STEP 2 WINDOW/LINUX SETUP
 AllowedIPs = 10.8.0.2/32
-
 ```
 Add accordingly input before save `<VPS_PRIVATE_KEY>`, `<VPS_PUBLIC_IP>`,`<WSL_PUBLIC_KEY> or <LINUX_PUBLIC_KEY>`
 
@@ -1323,6 +1352,7 @@ Looking for ultra-budget VPS options Here are two solid picks used by many in th
 - Hosting low-traffic services
 
 🌍 Suitable for developers on a tight budget or running long-term nodes with minimal cost.
+
 
 
 
